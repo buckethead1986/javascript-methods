@@ -1,10 +1,16 @@
 // import logo from './logo.svg';
 // import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"; //redundant because of 'rel="Stylesheet"' link in index.html
-import Container from "./components/Container.js";
+import Appbar from "./components/Appbar.js";
+import TabsContainer from "./components/tabComponents/TabsContainer.js";
 
 function App() {
-  return <Container />;
+  return (
+    <div>
+      <Appbar />
+      <TabsContainer />
+    </div>
+  );
 }
 
 export default App;
