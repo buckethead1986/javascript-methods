@@ -26,7 +26,7 @@ export default function TabsContainer() {
         eventKey={card.eventKey}
         name={card.name}
         description={card.description}
-        exampleCode={card.exampleCode}
+        sections={card.sections}
       />
     );
   });
@@ -46,7 +46,7 @@ export default function TabsContainer() {
   // );
 
   return (
-    <TabContainer id="left-tabs-example" defaultActiveKey="first">
+    <TabContainer id="left-tabs-example" defaultActiveKey={1}>
       <Row>
         <Col sm={2}>
           <Nav variant="pills" className="flex-column">
