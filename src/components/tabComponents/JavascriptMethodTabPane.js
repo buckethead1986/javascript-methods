@@ -38,19 +38,6 @@ export default function JavascriptMethodTabPane(props) {
     );
   });
 
-  //no dividing line
-  const allCardBodys = props.sections.map(section => {
-    return (
-      <Card.Body>
-        <h5>{section.title}</h5>
-        <p>{section.description}</p>
-        <pre style={{ padding: "1%", backgroundColor: "#eee" }}>
-          {section.code}
-        </pre>
-      </Card.Body>
-    );
-  });
-
   function scrollToHash(hashName) {
     var anchorlink = document.getElementById(hashName);
     anchorlink.scrollIntoView({ behavior: "smooth" });
@@ -64,10 +51,16 @@ export default function JavascriptMethodTabPane(props) {
         <Card.Body>
           <Card.Title>Description</Card.Title>
           <Card.Text>{props.description}</Card.Text>
-          <ul>{anchorLinks}</ul>
+          {props.sections.length > 1 ? (
+            <div>
+              <Card.Text>Sections (Click to scroll to the section):</Card.Text>
+              <ul>{anchorLinks}</ul>
+            </div>
+          ) : (
+            ""
+          )}
         </Card.Body>
         {listGroup}
-        {/*{allCardBodys}*/}
       </Card>
     </TabPane>
   );

@@ -8,7 +8,8 @@ import {
   NavItem,
   NavLink
 } from "react-bootstrap";
-// import Appbar from "./Appbar.js";import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
+// import Appbar from "./Appbar.js";
+import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import { tabData } from "./TabData.js";
 
 export default function TabsContainer() {
