@@ -25,7 +25,14 @@ export default function JavascriptMethodTabPane(props) {
   //inserts dividing line between items
   const listGroup = props.sections.map(section => {
     anchorLinks.push(
-      <li onClick={event => scrollToHash(section.id)}>{section.title}</li>
+      <li>
+        <a
+          style={{ textDecoration: "underline blue", cursor: "pointer" }}
+          onClick={event => scrollToHash(section.id)}
+        >
+          {section.title}
+        </a>
+      </li>
     );
     return (
       <ListGroup.Item id={section.id}>
@@ -53,7 +60,7 @@ export default function JavascriptMethodTabPane(props) {
           <Card.Text>{props.description}</Card.Text>
           {props.sections.length > 1 ? (
             <div>
-              <Card.Text>Sections (Click to scroll to the section):</Card.Text>
+              <Card.Text>Sections:</Card.Text>
               <ul>{anchorLinks}</ul>
             </div>
           ) : (

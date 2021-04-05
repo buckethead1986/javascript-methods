@@ -47,5 +47,25 @@ export const tabData = [
         code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
       }
     ]
+  },
+  {
+    eventKey: 3,
+    name: ".split()",
+    description:
+      "Convert the elements of a string into an array, split around a specified separator.",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description: "",
+        code: `string.split(separator)`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const str = 'No, I am your father'\nconsole.log(str.split("")) // '[ 'N', 'o', ',', ' ', 'I', ' ', 'a', 'm', ' ', 'y', 'o', 'u', 'r', ' ', 'f', 'a', 't', 'h', 'e', 'r' ]'\nconsole.log(str.split(',')) // [ 'No', ' I am your father' ]`
+      }
+    ]
   }
 ];
