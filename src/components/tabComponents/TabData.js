@@ -64,7 +64,27 @@ export const tabData = [
         id: 1,
         title: "Example",
         description: "",
-        code: `const str = 'No, I am your father'\nconsole.log(str.split("")) // '[ 'N', 'o', ',', ' ', 'I', ' ', 'a', 'm', ' ', 'y', 'o', 'u', 'r', ' ', 'f', 'a', 't', 'h', 'e', 'r' ]'\nconsole.log(str.split(',')) // [ 'No', ' I am your father' ]`
+        code: `const str = 'No, I am your father'\nconsole.log(str.split("")) // [ 'N', 'o', ',', ' ', 'I', ' ', 'a', 'm', ' ', 'y', 'o', 'u', 'r', ' ', 'f', 'a', 't', 'h', 'e', 'r' ]\nconsole.log(str.split(',')) // [ 'No', ' I am your father' ]`
+      }
+    ]
+  },
+  {
+    eventKey: 4,
+    name: ".filter()",
+    description:
+      "Iterates through all elements of an array, returning a new array containing all elements that pass a test (provided as a function)",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description: "",
+        code: `array.filter(filterFunction)`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const array = [4, 7, 30, 19, 107, 24]\n\nfunction checkForEven(number) {\n return number % 2 === 0   // modulus (%) returns any remainder from dividing by the given number. Even numbers return 0 when divided by 2\n}\nconsole.log(array.filter(checkForEven)) // [4, 30, 24]\nconsole.log(array.filter(number => number % 2 === 0)) // [4, 30, 24]`
       }
     ]
   }
