@@ -8,7 +8,6 @@ import {
   NavItem,
   NavLink
 } from "react-bootstrap";
-// import Appbar from "./Appbar.js";
 import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import { tabData } from "./TabData.js";
 
@@ -30,20 +29,6 @@ export default function TabsContainer() {
       />
     );
   });
-
-  // const horizontalTabs = (
-  //   <Tabs defaultActiveKey="first" transition={false} id="noanim-tab-example">
-  //     <Tab eventKey="first" title="First">
-  //       <CardTab />
-  //     </Tab>
-  //     <Tab eventKey="second" title="second">
-  //       <CardTab />
-  //     </Tab>
-  //     <Tab eventKey="third" title="Third" disabled>
-  //       <CardTab />
-  //     </Tab>
-  //   </Tabs>
-  // );
 
   return (
     <TabContainer id="left-tabs-example" defaultActiveKey={1}>

@@ -3,24 +3,6 @@ import { TabPane, Card, Button, ListGroup } from "react-bootstrap";
 
 export default function JavascriptMethodTabPane(props) {
   const anchorLinks = [];
-  // const subheadings = [];
-  // props.sections.forEach(subheading => {
-  //   subheadings.push(
-  //     <ListGroup.Item>
-  //       <Card.Title>{subheading[0]}</Card.Title>
-  //       <Card.Subtitle>{subheading[1]}</Card.Subtitle>
-  //       <Card.Text>{<pre>{subheading[2]}</pre>}</Card.Text>
-  //     </ListGroup.Item>
-  //
-  //     // <div>
-  //     //   <Card.Title>{subheading[0]}</Card.Title>
-  //     //   <Card.Subtitle>{subheading[1]}</Card.Subtitle>
-  //     //   <Card.Text>
-  //     //     <pre>{subheading[2]}</pre>
-  //     //   </Card.Text>
-  //     // </div>
-  //   );
-  // });
 
   //inserts dividing line between items
   const listGroup = props.sections.map(section => {
