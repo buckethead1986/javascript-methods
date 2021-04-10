@@ -108,5 +108,26 @@ export const tabData = [
         code: `const numbers = [1, 2, 3, 4]\nnumbers.forEach(multiplyByThree)\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
       }
     ]
+  },
+  {
+    eventKey: 6,
+    name: ".forEach()",
+    description:
+      "Calls a function once for each element in an array, in order.",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description:
+          "currentValue is the current element in the array. index, arr, and thisValue are optional: index is the array index of currentValue, arr is the array object, and thisValue can be passed to provide a 'this' value for the function.",
+        code: `array.forEach(function(currentValue, index, arr), thisValue)`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const numbers = [1, 2, 3, 4]\nnumbers.forEach(multiplyByThree)\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
+      }
+    ]
   }
 ];
