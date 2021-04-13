@@ -1,5 +1,6 @@
 import React from "react";
 import { TabPane, Card, Button, ListGroup } from "react-bootstrap";
+import styles from "./styles.module.css";
 
 export default function JavascriptMethodTabPane(props) {
   const anchorLinks = [];
@@ -19,7 +20,7 @@ export default function JavascriptMethodTabPane(props) {
     return (
       <ListGroup.Item id={section.id}>
         <h5>{section.title}</h5>
-        <p>{section.description}</p>
+        {section.description}
         <pre style={{ padding: "1%", backgroundColor: "#eee" }}>
           {section.code}
         </pre>
@@ -42,8 +43,8 @@ export default function JavascriptMethodTabPane(props) {
           <Card.Text>{props.description}</Card.Text>
           {props.sections.length > 1 ? (
             <div>
-              <Card.Text>Sections:</Card.Text>
-              <ul>{anchorLinks}</ul>
+              <Card.Text style={{ marginBottom: 0 }}>Sections:</Card.Text>
+              <ul style={{ marginBottom: 0 }}>{anchorLinks}</ul>
             </div>
           ) : (
             ""

@@ -2,29 +2,48 @@ export const tabData = [
   {
     eventKey: 1,
     name: "Functions",
-    description:
-      "Javascript functions are blocks of code designed to perform a particular task.",
+    description: (
+      <p>
+        Javascript functions are blocks of code designed to perform a particular
+        task.
+      </p>
+    ),
     sections: [
       {
         id: 0,
         title: "Function Declaration",
-        description: `Function Declarations start with the keyword 'function'.`,
-        code: `//Basic Syntax:\nfunction functionName(parameter1, parameter2...) = {\n return statement\n}\n\n//Simple Example:\nfunction multiplyByTwo(number) = {\n  return number * 2;\n}\n\n//Expected output:\n//console.log(multiplyByTwo(4)) //8`
+        description: (
+          <p>Function Declarations start with the keyword 'function'.</p>
+        ),
+        code: `//Basic Syntax:\nfunction functionName(parameter1, parameter2...) = {\n return statement\n}\n\n//Simple Example:\nfunction multiplyByTwo(number) = {\n  return number * 2;\n}\n\n//Expected output:\nconsole.log(multiplyByTwo(4)) //8`
       },
       {
         id: 1,
         title: "Function Expression",
-        description: "Function Expressions start with the keyword 'const'.",
-        code: `//Basic Syntax:\nconst functionName = function(parameter1, parameter2...) {\n return statement\n}\n\n//Simple Example:\nconst multiplyByThree = function(number) {\n return number * 3;\n}\n\n//Expected Output:\n//console.log(multiplyByThree(4)) //12`
+        description: (
+          <p>Function Expressions start with the keyword 'const'.</p>
+        ),
+        code: `//Basic Syntax:\nconst functionName = function(parameter1, parameter2...) {\n return statement\n}\n\n//Simple Example:\nconst multiplyByThree = function(number) {\n return number * 3;\n}\n\n//Expected Output:\nconsole.log(multiplyByThree(4)) //12`
       },
       {
         id: 2,
         title: "Arrow Functions",
-        description: `Arrow Functions are written similarly to Function Expressions, with a fat arrow (=>) between the list of parameters and code block.
-        If there's only one parameter, no parentheses are required.
-        If the code block fits on one line, the curly braces and return statement can be removed.
-        Arrow functions are anonymous (no name), have shorter syntax, and do not have their own 'this', instead using the 'this' context of the enclosing execution context.`,
-        code: `//Basic Syntax:\nconst functionName = (parameter1, parameter2,...) => {\n return statement\n}\n\n//Simple Example:\nconst multiplyByFour = (number) => {\n return number * 4\n}\n\n//Removing the parentheses around a single parameter, and the curly braces and return keyword for a code block requiring only one line:\nconst multiplyByFour = number => number * 4\n\n//Expected Output:\n//console.log(multiplyByFour(6)) //24`
+        description: (
+          <p>
+            Arrow Functions are written similarly to Function Expressions, with
+            a fat arrow (=>) between the list of parameters and code block.
+            <br />
+            If there&apos;s only one parameter, no parentheses are required.
+            <br />
+            If the code block fits on one line, the curly braces and return
+            statement can be removed.
+            <br />
+            Arrow functions are anonymous (no name), have shorter syntax, and do
+            not have their own 'this', instead using the 'this' context of the
+            enclosing execution context.
+          </p>
+        ),
+        code: `//Basic Syntax:\nconst functionName = (parameter1, parameter2,...) => {\n return statement\n}\n\n//Simple Example:\nconst multiplyByFour = (number) => {\n return number * 4\n}\n\n//Removing the parentheses around a single parameter, and the curly braces and return keyword for a code block requiring only one line:\nconst multiplyByFour = number => number * 4\n\n//Expected Output:\nconsole.log(multiplyByFour(6)) //24`
       }
     ]
   },
@@ -97,8 +116,20 @@ export const tabData = [
       {
         id: 0,
         title: "Syntax",
-        description:
-          "currentValue is the current element in the array. index, arr, and thisValue are optional: index is the array index of currentValue, arr is the array object, and thisValue can be passed to provide a 'this' value for the function.",
+        description: (
+          <p>
+            currentValue is the current element in the array. index, arr, and
+            thisValue are optional: <br />
+            <ul>
+              <li>index is the array index of currentValue.</li>
+              <li>arr is the array object.</li>
+              <li>
+                thisValue can be passed to provide a 'this' value for the
+                function.
+              </li>
+            </ul>
+          </p>
+        ),
         code: `array.forEach(function(currentValue, index, arr), thisValue)`
       },
       {
