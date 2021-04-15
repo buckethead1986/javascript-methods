@@ -118,13 +118,16 @@ export const tabData = [
         title: "Syntax",
         description: (
           <p>
-            currentValue is the current element in the array. index, arr, and
-            thisValue are optional: <br />
+            Required Values:
             <ul>
-              <li>index is the array index of currentValue.</li>
-              <li>arr is the array object.</li>
+              <li>currentValue: The current element in the array.</li>
+            </ul>
+            Optional Values:
+            <ul>
+              <li>index: The array index of currentValue.</li>
+              <li>arr: The array object.</li>
               <li>
-                thisValue can be passed to provide a 'this' value for the
+                thisValue: Can be passed to provide a 'this' value for the
                 function.
               </li>
             </ul>
@@ -136,7 +139,7 @@ export const tabData = [
         id: 1,
         title: "Example",
         description: "",
-        code: `const numbers = [1, 2, 3, 4]\nnumbers.forEach(multiplyByThree)\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
+        code: `const numbers = [1, 2, 3, 4]\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers.forEach(multiplyByThree)) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
       }
     ]
   },
@@ -157,6 +160,45 @@ export const tabData = [
         title: "Example",
         description: "",
         code: `const numbers = [1, 2, 3, 4]\nnumbers.includes(4) // true\nnumbers.includes('banana') // false`
+      }
+    ]
+  },
+  {
+    eventKey: 7,
+    name: ".every()",
+    description:
+      "Iterates over an array, checking if every element passes a test(provided as a function). Returns true if all elements pass the test, false if one or more fails. Does not change the original array",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description: (
+          <p>
+            Required Values:
+            <ul style={{ marginBottom: 0 }}>
+              {" "}
+              {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+              <li>currentValue: The current element in the array.</li>
+            </ul>
+            Optional Values:
+            <ul style={{ marginBottom: 0 }}>
+              {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+              <li>index: The array index of currentValue.</li>
+              <li>arr: The array object.</li>
+              <li>
+                thisValue: Can be passed to provide a 'this' value for the
+                function.
+              </li>
+            </ul>
+          </p>
+        ),
+        code: `array.every(function(currentValue, index, arr), thisValue)`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const allEvenNumbers = [2, 4, 6, 8]\nconst someOddNumbers = [2, 4, 7, 8]\n\nfunction checkForEven(number) {\n  return number % 2 === 0\n}\n\nconsole.log(allEvenNumbers.every(checkForEven)) // true\nconsole.log(someOddNumbers.every(checkForEven)) // false`
       }
     ]
   }
