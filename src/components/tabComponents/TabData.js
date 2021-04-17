@@ -167,7 +167,7 @@ export const tabData = [
     eventKey: 7,
     name: ".every()",
     description:
-      "Iterates over an array, checking if every element passes a test(provided as a function). Returns true if all elements pass the test, false if one or more fails. Does not change the original array",
+      "Iterates over an array, checking if every element passes a test (provided as a function). Returns true if all elements pass the test, false if one or more fails. Does not change the original array",
     sections: [
       {
         id: 0,
@@ -199,6 +199,26 @@ export const tabData = [
         title: "Example",
         description: "",
         code: `const allEvenNumbers = [2, 4, 6, 8]\nconst someOddNumbers = [2, 4, 7, 8]\n\nfunction checkForEven(number) {\n  return number % 2 === 0\n}\n\nconsole.log(allEvenNumbers.every(checkForEven)) // true\nconsole.log(someOddNumbers.every(checkForEven)) // false`
+      }
+    ]
+  },
+  {
+    eventKey: 6,
+    name: ".includes()",
+    description:
+      "Determines whether an array includes a specified element. Returns 'true' if it does, and 'false' if not.",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description: "",
+        code: `array.includes(element)`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const numbers = [1, 2, 3, 4]\nnumbers.includes(4) // true\nnumbers.includes('banana') // false`
       }
     ]
   }
