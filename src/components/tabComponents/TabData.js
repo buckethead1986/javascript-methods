@@ -203,22 +203,41 @@ export const tabData = [
     ]
   },
   {
-    eventKey: 6,
-    name: ".includes()",
+    eventKey: 8,
+    name: ".indexOf()",
     description:
-      "Determines whether an array includes a specified element. Returns 'true' if it does, and 'false' if not.",
+      "Searches an array for a specified item, and returns its position. Returns -1 if the item isn't found.",
     sections: [
       {
         id: 0,
         title: "Syntax",
         description: "",
-        code: `array.includes(element)`
+        code: `array.indexOf(element)`
       },
       {
         id: 1,
         title: "Example",
         description: "",
-        code: `const numbers = [1, 2, 3, 4]\nnumbers.includes(4) // true\nnumbers.includes('banana') // false`
+        code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.indexOf('bears')) // 2\nconsole.log(items.indexOf('banana')) // -1`
+      }
+    ]
+  },
+  {
+    eventKey: 9,
+    name: ".length",
+    description: "Returns or sets the length of the array",
+    sections: [
+      {
+        id: 0,
+        title: "Syntax",
+        description: "",
+        code: `array.length`
+      },
+      {
+        id: 1,
+        title: "Example",
+        description: "",
+        code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.length) // 5\n\nitems.length = 3\nconsole.log(items) // ["lions", "tigers", "bears"]\n\nitems.length = 5\nconsole.log(items) //["lions", "tigers", "bears", , ] //(empty item positions)`
       }
     ]
   }
