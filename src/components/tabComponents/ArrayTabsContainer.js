@@ -16,11 +16,26 @@ import { tabData } from "./TabData.js";
 import { arrayMethodsData } from "./ArrayMethodsData.js";
 
 export default function TabsContainer() {
-  // const [open, setOpen] = useState(false);
-  // const [open2, setOpen2] = useState(false);
-  // const navLinksArray = [];
+  const navLinksArray = { array: [], number: [], string: [] };
   const navLinksArray2 = { array: [], number: [], string: [] };
 
+  // const createTabPanes = arrayMethodsData[1].methods.map(card => {
+  //   navLinksArray.push(
+  //     <NavItem>
+  //       <NavLink eventKey={`${arrayMethodsData[1].eventKey}-${card.eventKey}`}>
+  //         {card.name}
+  //       </NavLink>
+  //     </NavItem>
+  //   );
+  //   return (
+  //     <JavascriptMethodTabPane
+  //       eventKey={`${arrayMethodsData[1].eventKey}-${card.eventKey}`}
+  //       name={card.name}
+  //       description={card.description}
+  //       sections={card.sections}
+  //     />
+  //   );
+  // });
   // const createTabPanes = arrayMethodsData[1].methods.map(card => {
   //   navLinksArray.push(
   //     <NavItem>
@@ -36,6 +51,27 @@ export default function TabsContainer() {
   //     />
   //   );
   // });
+
+  const createGenericTabPanes = object => {
+    console.log(object, object.eventKey);
+    object.methods.map(method => {
+      navLinksArray[object.eventKey].push(
+        <NavItem>
+          <NavLink eventKey={`${object.eventKey}-${method.eventKey}`}>
+            {method.name}
+          </NavLink>
+        </NavItem>
+      );
+      return (
+        <JavascriptMethodTabPane
+          eventKey={`${object.eventKey}-${method.eventKey}`}
+          name={method.name}
+          description={method.description}
+          sections={method.sections}
+        />
+      );
+    });
+  };
 
   //maps over each dataTypes methods(array, number, string, etc), returning a TabPane for each and a corresponding nav component, pushed to an array.
   // `${dataType.eventKey}-${card.eventKey}` evaluates to 'array-0' or 'number-8', based on the type of data and array index.
@@ -76,7 +112,7 @@ export default function TabsContainer() {
           </ListGroup>
         </Col>
         <Col sm={10}>
-          <TabContent>{createTabPanes2}</TabContent>
+          <TabContent>{createGenericTabPanes(arrayMethodsData[0])}</TabContent>
         </Col>
       </Row>
     </TabContainer>
