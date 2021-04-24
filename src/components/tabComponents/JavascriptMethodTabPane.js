@@ -1,6 +1,5 @@
 import React from "react";
 import { TabPane, Card, Button, ListGroup } from "react-bootstrap";
-import styles from "./styles.module.css"; //Card.Text className={styles.less}. inline styling as style={{marginBottom:0}} also works
 
 export default function JavascriptMethodTabPane(props) {
   const anchorLinks = [];
@@ -43,8 +42,8 @@ export default function JavascriptMethodTabPane(props) {
           <Card.Text>{props.description}</Card.Text>
           {props.sections.length > 1 ? (
             <div>
-              <Card.Text className={styles.less}>Sections:</Card.Text>
-              <ul className={styles.less}>{anchorLinks}</ul>
+              <Card.Text style={{ marginBottom: 0 }}>Sections:</Card.Text>
+              <ul style={{ marginBottom: 0 }}>{anchorLinks}</ul>
             </div>
           ) : (
             ""

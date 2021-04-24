@@ -61,11 +61,15 @@ export default function TabsContainer(props) {
   // <ListGroup> and <Collapse> should be unique for each tab 'dropdown' (array, number, string, etc)
   return (
     <div>
-      <ListGroup.Item action onClick={() => setOpen(!open)}>
+      <ListGroup.Item
+        action
+        eventKey={`${props.name.toLowerCase()}-0`}
+        onClick={() => setOpen(!open)}
+      >
         {props.name}
       </ListGroup.Item>
       <Collapse in={open}>
-        <div id="example-collapse-text">{props.navLinks}</div>
+        <ListGroup>{props.navLinks}</ListGroup>
       </Collapse>
     </div>
   );
