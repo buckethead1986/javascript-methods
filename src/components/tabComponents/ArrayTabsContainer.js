@@ -4,25 +4,25 @@ import {
   Col,
   ListGroup,
   TabContainer,
-  TabContent,
-  Nav,
-  NavItem,
-  NavLink,
-  Collapse
+  TabContent
+  // Nav,
+  // NavItem,
+  // NavLink,
+  // Collapse
 } from "react-bootstrap";
 import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import TabNavLinks from "./TabNavLinks.js";
-import { tabData } from "./TabData.js";
-import { arrayMethodsData } from "./ArrayMethodsData.js";
-import { oldArrayMethodsData } from "./OldArrayMethodsData.js";
-import { numberMethodsData } from "./NumberMethodsData.js";
+// import { tabData } from "./data/TabData.js";
+import { arrayMethodsData } from "./data/ArrayMethodsData.js";
+// import { oldArrayMethodsData } from "./data/OldArrayMethodsData.js";
+import { numberMethodsData } from "./data/NumberMethodsData.js";
 
 export default function TabsContainer() {
   // const [open, setOpen] = useState(false);
   // const [open2, setOpen2] = useState(false);
 
   const navLinksArray = { array: [], number: [], string: [] };
-  const navLinksArray2 = { array: [], number: [], string: [] };
+  // const navLinksArray2 = { array: [], number: [], string: [] };
 
   // const createTabPanes = arrayMethodsData[1].methods.map(card => {
   //   navLinksArray.push(
@@ -82,45 +82,34 @@ export default function TabsContainer() {
 
   //maps over each dataTypes methods(array, number, string, etc), returning a TabPane for each and a corresponding nav component, pushed to an array.
   // `${dataType.eventKey}-${card.eventKey}` evaluates to 'array-0' or 'number-8', based on the type of data and array index.
-  const createTabPanes2 = oldArrayMethodsData.map(dataType => {
-    return dataType.methods.map(card => {
-      navLinksArray2[dataType.eventKey].push(
-        <ListGroup.Item
-          action
-          eventKey={`${dataType.eventKey}-${card.eventKey}`}
-        >
-          {card.name}
-        </ListGroup.Item>
-      );
-      return (
-        <JavascriptMethodTabPane
-          eventKey={`${dataType.eventKey}-${card.eventKey}`}
-          name={card.name}
-          description={card.description}
-          sections={card.sections}
-        />
-      );
-    });
-  });
+  // const createTabPanes2 = oldArrayMethodsData.map(dataType => {
+  //   return dataType.methods.map(card => {
+  //     navLinksArray2[dataType.eventKey].push(
+  //       <ListGroup.Item
+  //         action
+  //         eventKey={`${dataType.eventKey}-${card.eventKey}`}
+  //       >
+  //         {card.name}
+  //       </ListGroup.Item>
+  //     );
+  //     return (
+  //       <JavascriptMethodTabPane
+  //         eventKey={`${dataType.eventKey}-${card.eventKey}`}
+  //         name={card.name}
+  //         description={card.description}
+  //         sections={card.sections}
+  //       />
+  //     );
+  //   });
+  // });
 
   return (
-    <TabContainer id="left-tabs-example" defaultActiveKey={"array-1"}>
+    <TabContainer id="left-tabs-example" defaultActiveKey={"array-0"}>
       <Row>
         <Col sm={2}>
           <ListGroup>
             <TabNavLinks name="Array" navLinks={navLinksArray.array} />
             <TabNavLinks name="Number" navLinks={navLinksArray.number} />
-
-            <div>
-              <ListGroup.Item action eventKey="array-4">
-                String
-              </ListGroup.Item>
-            </div>
-            <div>
-              <ListGroup.Item action href="array-3">
-                Test
-              </ListGroup.Item>
-            </div>
           </ListGroup>
         </Col>
         <Col sm={10}>

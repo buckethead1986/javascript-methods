@@ -9,8 +9,8 @@ import {
   NavLink
 } from "react-bootstrap";
 import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
-import { tabData } from "./TabData.js";
-import { arrayMethodsData } from "./ArrayMethodsData.js";
+import { tabData } from "./data/TabData.js";
+import { arrayMethodsData } from "./data/ArrayMethodsData.js";
 
 export default function TabsContainer() {
   const navLinksArray = [];
