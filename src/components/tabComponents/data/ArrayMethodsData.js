@@ -1,22 +1,6 @@
 export const arrayMethodsData = {
   eventKey: "array",
   name: "Array",
-  // description:
-  //   "Arrays are Objects and are used to store multiple values in a single variable. Arrays indexes are zero-based. The first element in an array is 0, the second is 1, etc.",
-  // sections: [
-  //   {
-  //     id: 0,
-  //     title: "Syntax",
-  //     description: "",
-  //     code: `const arrayName = [value1, value2, ...]`
-  //   },
-  //   {
-  //     id: 1,
-  //     title: "Example",
-  //     description: "",
-  //     code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
-  //   }
-  // ],
   methods: [
     {
       eventKey: 0,

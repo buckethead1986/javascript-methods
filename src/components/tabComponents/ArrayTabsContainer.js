@@ -1,28 +1,12 @@
 import React, { useState } from "react";
-import {
-  Row,
-  Col,
-  ListGroup,
-  TabContainer,
-  TabContent
-  // Nav,
-  // NavItem,
-  // NavLink,
-  // Collapse
-} from "react-bootstrap";
+import { Row, Col, ListGroup, TabContainer, TabContent } from "react-bootstrap";
 import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import TabNavLinks from "./TabNavLinks.js";
-// import { tabData } from "./data/TabData.js";
 import { arrayMethodsData } from "./data/ArrayMethodsData.js";
-// import { oldArrayMethodsData } from "./data/OldArrayMethodsData.js";
 import { numberMethodsData } from "./data/NumberMethodsData.js";
 
 export default function TabsContainer() {
-  // const [open, setOpen] = useState(false);
-  // const [open2, setOpen2] = useState(false);
-
   const navLinksArray = { array: [], number: [], string: [] };
-  // const navLinksArray2 = { array: [], number: [], string: [] };
 
   // const createTabPanes = arrayMethodsData[1].methods.map(card => {
   //   navLinksArray.push(
