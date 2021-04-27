@@ -20,20 +20,32 @@ export const numberMethodsData = {
     {
       eventKey: 0,
       name: "Number",
-      description:
-        "Javascript has only one type of number, 64-bit floating point (unlike other programming languages, which can specify how precisely a number can be stored: Integer, short, long, float, etc). Numbers can be written with or without decimals, with scientific notation, and are accurate up to 15 digits.",
+      description: (
+        <p>
+          Javascript has only one type of number, 64-bit floating point (unlike
+          other programming languages, which can specify how precisely a number
+          can be stored: Integer, short, long, float, etc). The number is stored
+          in bits 0-51, the exponent in bits 52-62, and the sign in bit 63.
+        </p>
+      ),
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `number syntax`
+          title: "Precision",
+          description: (
+            <p>
+              Numbers can be written with or without decimals, with scientific
+              notation, and are accurate up to 15 digits.
+            </p>
+          ),
+          code: `const x = 999999999999999;   // x will be 999999999999999\nconst y = 9999999999999999;  // y will be 10000000000000000`
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `number issues examples`
+          title: "",
+          description:
+            "The maximum number of decimals is 17, but floating point arithmetic isn't always accurate.",
+          code: `const x = 0.7 - 0.3;         // x will be 0.39999999999999997`
         }
       ]
     },
