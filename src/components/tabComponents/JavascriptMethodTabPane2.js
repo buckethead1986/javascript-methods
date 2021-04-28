@@ -3,7 +3,6 @@ import { TabPane, Card, Button, ListGroup } from "react-bootstrap";
 
 export default function JavascriptMethodTabPane(props) {
   const anchorLinks = [];
-  console.log(props);
 
   //inserts dividing line between items
   const listGroup = props.sections.map(section => {
@@ -11,26 +10,29 @@ export default function JavascriptMethodTabPane(props) {
       <li>
         <a
           style={{ textDecoration: "underline blue", cursor: "pointer" }}
-          onClick={event => scrollToHash(section.id)}
+          onClick={event =>
+            scrollToHash(`${section.sectionTitle}-${section.id}`)}
         >
-          {section.title}
+          {section.sectionTitle}
         </a>
       </li>
     );
-    const code = section.map(item => {
+
+    const subsections = section.subsections.map(subsection => {
       return (
-        <ListGroup.Item id={section.id}>
+        <div>
           <pre style={{ padding: "1%", backgroundColor: "#eee" }}>
-            {item.code}
+            {subsection.code}
           </pre>
-          {item.description}
-        </ListGroup.Item>
+          {subsection.description}
+        </div>
       );
     });
+
     return (
-      <ListGroup.Item id={section.id}>
-        <h5>{section.title}</h5>
-        {code}
+      <ListGroup.Item id={`${section.sectionTitle}-${section.id}`}>
+        <h5>{section.sectionTitle}</h5>
+        {subsections}
       </ListGroup.Item>
     );
   });

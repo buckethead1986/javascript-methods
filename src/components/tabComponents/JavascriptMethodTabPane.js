@@ -6,6 +6,7 @@ export default function JavascriptMethodTabPane(props) {
 
   //inserts dividing line between items
   const listGroup = props.sections.map(section => {
+    console.log(section.id);
     anchorLinks.push(
       <li>
         <a

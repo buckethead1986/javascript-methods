@@ -1,7 +1,8 @@
 export const arrayMethodsData = {
   eventKey: "array",
   name: "Array",
-  methods: [
+
+  tabs: [
     {
       eventKey: 0,
       name: "Array",
@@ -11,17 +12,56 @@ export const arrayMethodsData = {
         {
           id: 0,
           title: "Syntax",
-          description: "",
-          code: `const arrayName = [value1, value2, ...]`
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const arrayName = [value1, value2, ...]`
+            }
+          ]
         },
         {
           id: 1,
           title: "Example",
-          description: "",
-          code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
+            }
+          ]
         }
       ]
     },
+    {
+      eventKey: 1,
+      name: ".join()2",
+      description:
+        "Convert the elements of an array into a string. The elements are separated by a specified separator, which is a comma by default.",
+      sections: [
+        {
+          id: 0,
+          title: "",
+          subsections: [
+            {
+              id: 0,
+              title: "Syntax",
+              description: "",
+              code: `array.join(separator)`
+            },
+            {
+              id: 1,
+              title: "Example",
+              description: "",
+              code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
+
+            }
+          ]
+
+        }]
+
     {
       eventKey: 2,
       name: ".join()",
@@ -31,51 +71,69 @@ export const arrayMethodsData = {
         {
           id: 0,
           title: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
+
+            }
+          ]
           description: "",
           code: `array.join(separator)`
         },
         {
           id: 1,
           title: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
+
+            }
+          ]
           description: "",
           code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
         },
-        {
-          id: 2,
-          title: "Syntax",
-          description: "",
-          code: `array.join(separator)`
-        },
-        {
-          id: 3,
-          title: "Example",
-          description: "",
-          code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        },
-        {
-          id: 4,
-          title: "Syntax",
-          description: "",
-          code: `array.join(separator)`
-        },
-        {
-          id: 5,
-          title: "Example",
-          description: "",
-          code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        },
-        {
-          id: 6,
-          title: "Syntax",
-          description: "",
-          code: `array.join(separator)`
-        },
-        {
-          id: 7,
-          title: "Example",
-          description: "",
-          code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        }
+        // {
+        //   id: 2,
+        //   title: "Syntax",
+        //   description: "",
+        //   code: `array.join(separator)`
+        // },
+        // {
+        //   id: 3,
+        //   title: "Example",
+        //   description: "",
+        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
+        // },
+        // {
+        //   id: 4,
+        //   title: "Syntax",
+        //   description: "",
+        //   code: `array.join(separator)`
+        // },
+        // {
+        //   id: 5,
+        //   title: "Example",
+        //   description: "",
+        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
+        // },
+        // {
+        //   id: 6,
+        //   title: "Syntax",
+        //   description: "",
+        //   code: `array.join(separator)`
+        // },
+        // {
+        //   id: 7,
+        //   title: "Example",
+        //   description: "",
+        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
+        // }
       ]
     },
     {

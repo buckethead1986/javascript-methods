@@ -66,23 +66,23 @@ export default function TabsContainer() {
   };
   const createGenericTabPanes2 = object => {
     console.log(object);
-    return object.sections.map((section, index) => {
+    return object.tabs.map((tab, index) => {
       if (index !== 0) {
         navLinksArray[object.eventKey].push(
           <ListGroup.Item
             action
-            eventKey={`${object.eventKey}-${section.eventKey}`}
+            eventKey={`${object.eventKey}-${tab.eventKey}`}
           >
-            {section.name}
+            {tab.name}
           </ListGroup.Item>
         );
       }
       return (
         <JavascriptMethodTabPane2
-          eventKey={`${object.eventKey}-${section.eventKey}`}
-          name={section.name}
-          description={section.description}
-          sections={section.examples}
+          eventKey={`${object.eventKey}-${tab.eventKey}`}
+          name={tab.name}
+          description={tab.description}
+          sections={tab.sections}
         />
       );
     });
