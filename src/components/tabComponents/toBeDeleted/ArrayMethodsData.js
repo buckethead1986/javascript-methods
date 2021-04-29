@@ -1,3 +1,35 @@
+// Data structure:
+// const example = {
+//   eventKey: 0,
+//   name: "name",
+//   tabs: [
+//     {
+//       eventKey: 0,
+//       name: "firstTabName",
+//       description: "tabDescription",
+//       sections: [
+//         {
+//           id: 0,
+//           sectionTitle: "sectionTitle",
+//           subsections: [
+//             {
+//               id: 0,
+//               title: "subsectionTitle",
+//               description: "subsectionDescription",
+//               code: "subsectionCodeSnippet"
+//             }
+//           ]
+//         }
+//       ]
+//     },
+//     {
+//       eventKey: 1,
+//       name: "secondTabName",
+//       ...
+//     }
+//   ]
+// };
+
 export const arrayMethodsData = {
   eventKey: "array",
   name: "Array",

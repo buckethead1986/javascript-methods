@@ -11,7 +11,7 @@ export default function JavascriptMethodTabPane(props) {
         <a
           style={{ textDecoration: "underline blue", cursor: "pointer" }}
           onClick={event =>
-            scrollToHash(`${section.sectionTitle}-${section.id}`)}
+            scrollToHash(`${props.eventKey}-${section.sectionTitle}`)}
         >
           {section.sectionTitle}
         </a>
@@ -30,7 +30,7 @@ export default function JavascriptMethodTabPane(props) {
     });
 
     return (
-      <ListGroup.Item id={`${section.sectionTitle}-${section.id}`}>
+      <ListGroup.Item id={`${props.eventKey}-${section.sectionTitle}`}>
         <h5>{section.sectionTitle}</h5>
         {subsections}
       </ListGroup.Item>

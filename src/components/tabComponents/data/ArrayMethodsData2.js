@@ -1,7 +1,6 @@
-export const arrayMethodsData = {
+export const arrayMethodsData2 = {
   eventKey: "array",
   name: "Array",
-
   tabs: [
     {
       eventKey: 0,
@@ -11,7 +10,7 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
+          sectionTitle: "Syntax",
           subsections: [
             {
               id: 0,
@@ -23,7 +22,7 @@ export const arrayMethodsData = {
         },
         {
           id: 1,
-          title: "Example",
+          sectionTitle: "Example",
           subsections: [
             {
               id: 0,
@@ -36,33 +35,6 @@ export const arrayMethodsData = {
       ]
     },
     {
-      eventKey: 1,
-      name: ".join()2",
-      description:
-        "Convert the elements of an array into a string. The elements are separated by a specified separator, which is a comma by default.",
-      sections: [
-        {
-          id: 0,
-          title: "",
-          subsections: [
-            {
-              id: 0,
-              title: "Syntax",
-              description: "",
-              code: `array.join(separator)`
-            },
-            {
-              id: 1,
-              title: "Example",
-              description: "",
-              code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-
-            }
-          ]
-
-        }]
-
-    {
       eventKey: 2,
       name: ".join()",
       description:
@@ -70,34 +42,28 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
+          sectionTitle: "Syntax",
           subsections: [
             {
               id: 0,
               title: "",
               description: "",
-              code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
-
+              code: `array.join(separator)`
             }
           ]
-          description: "",
-          code: `array.join(separator)`
         },
         {
           id: 1,
-          title: "Example",
+          sectionTitle: "Example",
           subsections: [
             {
               id: 0,
               title: "",
               description: "",
-              code: `const simpleArray = ['a', 'b', 'c', 'd', 'e']\nconsole.log(simpleArray[1]) // 'b'\n\nconst variedArray = [13, 'string', {objects: "themselves"}, ["Other", "Arrays"], 900]\nconsole.log(variedArray[0]) // 13\nconsole.log(variedArray[2].objects) // 'themselves'`
-
+              code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
             }
           ]
-          description: "",
-          code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        },
+        }
         // {
         //   id: 2,
         //   title: "Syntax",
@@ -144,15 +110,27 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `string.split(separator)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `string.split(separator)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const str = 'No, I am your father'\nconsole.log(str.split("")) // [ 'N', 'o', ',', ' ', 'I', ' ', 'a', 'm', ' ', 'y', 'o', 'u', 'r', ' ', 'f', 'a', 't', 'h', 'e', 'r' ]\nconsole.log(str.split(',')) // [ 'No', ' I am your father' ]`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const str = 'No, I am your father'\nconsole.log(str.split("")) // [ 'N', 'o', ',', ' ', 'I', ' ', 'a', 'm', ' ', 'y', 'o', 'u', 'r', ' ', 'f', 'a', 't', 'h', 'e', 'r' ]\nconsole.log(str.split(',')) // [ 'No', ' I am your father' ]`
+            }
+          ]
         }
       ]
     },
@@ -164,15 +142,27 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `array.filter(filterFunction)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.filter(filterFunction)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const array = [4, 7, 30, 19, 107, 24]\n\nfunction checkForEven(number) {\n return number % 2 === 0   // modulus (%) returns any remainder from dividing by the given number. Even numbers return 0 when divided by 2\n}\nconsole.log(array.filter(checkForEven)) // [4, 30, 24]\nconsole.log(array.filter(number => number % 2 === 0)) // [4, 30, 24]`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const array = [4, 7, 30, 19, 107, 24]\n\nfunction checkForEven(number) {\n return number % 2 === 0   // modulus (%) returns any remainder from dividing by the given number. Even numbers return 0 when divided by 2\n}\nconsole.log(array.filter(checkForEven)) // [4, 30, 24]\nconsole.log(array.filter(number => number % 2 === 0)) // [4, 30, 24]`
+            }
+          ]
         }
       ]
     },
@@ -184,31 +174,43 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: (
-            <p>
-              Required Values:
-              <ul>
-                <li>currentValue: The current element in the array.</li>
-              </ul>
-              Optional Values:
-              <ul>
-                <li>index: The array index of currentValue.</li>
-                <li>arr: The array object.</li>
-                <li>
-                  thisValue: Can be passed to provide a 'this' value for the
-                  function.
-                </li>
-              </ul>
-            </p>
-          ),
-          code: `array.forEach(function(currentValue, index, arr), thisValue)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: (
+                <p>
+                  Required Values:
+                  <ul>
+                    <li>currentValue: The current element in the array.</li>
+                  </ul>
+                  Optional Values:
+                  <ul>
+                    <li>index: The array index of currentValue.</li>
+                    <li>arr: The array object.</li>
+                    <li>
+                      thisValue: Can be passed to provide a 'this' value for the
+                      function.
+                    </li>
+                  </ul>
+                </p>
+              ),
+              code: `array.forEach(function(currentValue, index, arr), thisValue)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const numbers = [1, 2, 3, 4]\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers.forEach(multiplyByThree)) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const numbers = [1, 2, 3, 4]\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers.forEach(multiplyByThree)) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
+            }
+          ]
         }
       ]
     },
@@ -220,15 +222,27 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `array.includes(element)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.includes(element)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const numbers = [1, 2, 3, 4]\nnumbers.includes(4) // true\nnumbers.includes('banana') // false`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const numbers = [1, 2, 3, 4]\nnumbers.includes(4) // true\nnumbers.includes('banana') // false`
+            }
+          ]
         }
       ]
     },
@@ -240,34 +254,46 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: (
-            <p>
-              Required Values:
-              <ul style={{ marginBottom: 0 }}>
-                {" "}
-                {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
-                <li>currentValue: The current element in the array.</li>
-              </ul>
-              Optional Values:
-              <ul style={{ marginBottom: 0 }}>
-                {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
-                <li>index: The array index of currentValue.</li>
-                <li>arr: The array object.</li>
-                <li>
-                  thisValue: Can be passed to provide a 'this' value for the
-                  function.
-                </li>
-              </ul>
-            </p>
-          ),
-          code: `array.every(function(currentValue, index, arr), thisValue)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: (
+                <p>
+                  Required Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    {" "}
+                    {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+                    <li>currentValue: The current element in the array.</li>
+                  </ul>
+                  Optional Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+                    <li>index: The array index of currentValue.</li>
+                    <li>arr: The array object.</li>
+                    <li>
+                      thisValue: Can be passed to provide a 'this' value for the
+                      function.
+                    </li>
+                  </ul>
+                </p>
+              ),
+              code: `array.every(function(currentValue, index, arr), thisValue)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const allEvenNumbers = [2, 4, 6, 8]\nconst someOddNumbers = [2, 4, 7, 8]\n\nfunction checkForEven(number) {\n  return number % 2 === 0\n}\n\nconsole.log(allEvenNumbers.every(checkForEven)) // true\nconsole.log(someOddNumbers.every(checkForEven)) // false`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const allEvenNumbers = [2, 4, 6, 8]\nconst someOddNumbers = [2, 4, 7, 8]\n\nfunction checkForEven(number) {\n  return number % 2 === 0\n}\n\nconsole.log(allEvenNumbers.every(checkForEven)) // true\nconsole.log(someOddNumbers.every(checkForEven)) // false`
+            }
+          ]
         }
       ]
     },
@@ -279,15 +305,27 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `array.indexOf(element)`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.indexOf(element)`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.indexOf('bears')) // 2\nconsole.log(items.indexOf('banana')) // -1`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.indexOf('bears')) // 2\nconsole.log(items.indexOf('banana')) // -1`
+            }
+          ]
         }
       ]
     },
@@ -298,15 +336,27 @@ export const arrayMethodsData = {
       sections: [
         {
           id: 0,
-          title: "Syntax",
-          description: "",
-          code: `array.length`
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.length`
+            }
+          ]
         },
         {
           id: 1,
-          title: "Example",
-          description: "",
-          code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.length) // 5\n\nitems.length = 3\nconsole.log(items) // ["lions", "tigers", "bears"]\n\nitems.length = 5\nconsole.log(items) // ["lions", "tigers", "bears", , ] // (empty item positions)\nconsole.log(items[2]) // "bears"\nconsole.log(items[3]) // undefined`
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(items.length) // 5\n\nitems.length = 3\nconsole.log(items) // ["lions", "tigers", "bears"]\n\nitems.length = 5\nconsole.log(items) // ["lions", "tigers", "bears", , ] // (empty item positions)\nconsole.log(items[2]) // "bears"\nconsole.log(items[3]) // undefined`
+            }
+          ]
         }
       ]
     }
