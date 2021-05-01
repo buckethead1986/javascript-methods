@@ -359,6 +359,158 @@ export const arrayMethodsData2 = {
           ]
         }
       ]
+    },
+    {
+      eventKey: 10,
+      name: ".pop()",
+      description: (
+        <p>
+          Removes the last element of an array.
+          <ul>
+            <li>pop() returns the removed element.</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.pop()`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["lions", "tigers", "bears", "oh", "my"]\n\nconst x = items.pop()\nconsole.log(items) // ["lions", "tigers", "bears", "oh"]\nconsole.log(x) // "my"`
+            }
+          ]
+        }
+      ]
+    },
+    {
+      eventKey: 11,
+      name: ".push()",
+      description: (
+        <p>
+          Adds an element to the end of an array.{" "}
+          <ul>
+            <li>push() returns the length of the new array.</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.push(element)`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["lions", "tigers", "bears", "oh"]\n\nconst x = items.push("my")\nconsole.log(items) // ["lions", "tigers", "bears", "oh", "my"]\nconsole.log(x) // 5`
+            }
+          ]
+        }
+      ]
+    },
+    {
+      eventKey: 12,
+      name: ".shift()",
+      description: (
+        <p>
+          Removes an element from the beginning of an array.
+          <ul>
+            <li>shift() returns the removed element.</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.shift()`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["alpha", "beta", "gamma", "delta"]\n\nconst x = items.shift()\nconsole.log(items) // ["beta", "gamma", "delta"]\nconsole.log(x) // "alpha"`
+            }
+          ]
+        }
+      ]
+    },
+    {
+      eventKey: 13,
+      name: ".unshift()",
+      description: (
+        <p>
+          Adds an element to the beginning of an array.
+          <ul>
+            <li>unshift() returns the length of the new array.</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `array.unshift(element)`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const items = ["in", "the", "name", "of", "love"]\n\nconst x = items.unshift("stop")\nconsole.log(items) // ["stop", "in", "the", "name", "of", "love"]\nconsole.log(x) // 6`
+            }
+          ]
+        }
+      ]
     }
   ]
 };
