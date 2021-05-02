@@ -511,6 +511,199 @@ export const arrayMethodsData2 = {
           ]
         }
       ]
+    },
+    {
+      eventKey: 14,
+      name: "",
+      description: (
+        <p>
+          Description
+          <ul>
+            <li>fillerBullet</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        }
+      ]
+    }
+    {
+      eventKey: 15,
+      name: "",
+      description: (
+        <p>
+          Description
+          <ul>
+            <li>fillerBullet</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        }
+      ]
+    }
+    {
+      eventKey: 16,
+      name: "",
+      description: (
+        <p>
+          Description
+          <ul>
+            <li>fillerBullet</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        }
+      ]
+    }
+    {
+      eventKey: 17,
+      name: "",
+      description: (
+        <p>
+          Description
+          <ul>
+            <li>fillerBullet</li>
+          </ul>
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
+        }
+      ]
     }
   ]
 };
+
+// blank template:
+// 
+// {
+//   eventKey: 99,
+//   name: "",
+//   description: (
+//     <p>
+//       Description
+//       <ul>
+//         <li>fillerBullet</li>
+//       </ul>
+//     </p>
+//   ),
+//   sections: [
+//     {
+//       id: 0,
+//       sectionTitle: "Syntax",
+//       subsections: [
+//         {
+//           id: 0,
+//           title: "",
+//           description: "",
+//           code: ``
+//         }
+//       ]
+//     },
+//     {
+//       id: 1,
+//       sectionTitle: "Example",
+//       subsections: [
+//         {
+//           id: 0,
+//           title: "",
+//           description: "",
+//           code: ``
+//         }
+//       ]
+//     }
+//   ]
+// }
