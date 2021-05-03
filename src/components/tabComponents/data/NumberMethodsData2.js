@@ -320,25 +320,46 @@ export const numberMethodsData2 = {
         // }
       ]
     }
-    // {
-    //   eventKey: 1,
-    //   name: ".join()",
-    //   description:
-    //     "Convert the elements of an array into a string. The elements are separated by a specified separator, which is a comma by default.",
-    //   sections: [
-    //     {
-    //       id: 0,
-    //       title: "Syntax",
-    //       description: "",
-    //       code: `array.join(separator)`
-    //     },
-    //     {
-    //       id: 1,
-    //       title: "Example",
-    //       description: "",
-    //       code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-    //     }
-    //   ]
-    // }
   ]
 };
+
+// blank template:
+//
+// {
+//   eventKey: 99,
+//   name: "",
+//   description: (
+//     <p>
+//       Description
+//       <ul>
+//         <li>fillerBullet</li>
+//       </ul>
+//     </p>
+//   ),
+//   sections: [
+//     {
+//       id: 0,
+//       sectionTitle: "Syntax",
+//       subsections: [
+//         {
+//           id: 0,
+//           title: "",
+//           description: "",
+//           code: ``
+//         }
+//       ]
+//     },
+//     {
+//       id: 1,
+//       sectionTitle: "Example",
+//       subsections: [
+//         {
+//           id: 0,
+//           title: "",
+//           description: "",
+//           code: ``
+//         }
+//       ]
+//     }
+//   ]
+// }
