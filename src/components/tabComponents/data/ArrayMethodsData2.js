@@ -514,10 +514,13 @@ export const arrayMethodsData2 = {
     },
     {
       eventKey: 14,
-      name: "",
+      name: ".sort()",
       description: (
         <p>
-          Description
+          The sort() method sorts an array alphabetically, and will produce
+          incorrect results when sorting numbers. To sort numerically, a compare
+          function defining a different sorting method, returning a positive,
+          negative, or zero value, must be used.
           <ul>
             <li>fillerBullet</li>
           </ul>
@@ -530,9 +533,22 @@ export const arrayMethodsData2 = {
           subsections: [
             {
               id: 0,
-              title: "",
+              title: "Standard alphabetical sort:",
               description: "",
-              code: ``
+              code: `array.sort()`
+            },
+            {
+              id: 0,
+              title: "Generic numerical sort:",
+              description: (
+                <ul>
+                  <li>
+                    If a negative value is returned, a is sorted before b.
+                    Positive, b is sorted before a. Zero, no change is made.
+                  </li>
+                </ul>
+              ),
+              code: `array.sort(function(a, b) {return b-a})`
             }
           ]
         },
@@ -544,12 +560,12 @@ export const arrayMethodsData2 = {
               id: 0,
               title: "",
               description: "",
-              code: ``
+              code: `const strings = ["apple", "duck", "banana", "cucumber"]\nconsole.log(strings.sort()) // ["apple", "banana", "cucumber", "duck"]\n\nconst numbers = [1, 4, 10, -2, 7]\nconsole.log(numbers.sort()) // [ -2, 1, 10, 4, 7 ]\nconsole.log(numbers.sort(function(a,b) {return b-a})) // [10, 7, 4, 1, -2]\nconsole.log(numbers.sort(function(a,b) {return a-b})) // [-2, 1, 4, 7, 10]`
             }
           ]
         }
       ]
-    }
+    },
     {
       eventKey: 15,
       name: "",
@@ -587,7 +603,7 @@ export const arrayMethodsData2 = {
           ]
         }
       ]
-    }
+    },
     {
       eventKey: 16,
       name: "",
@@ -625,7 +641,7 @@ export const arrayMethodsData2 = {
           ]
         }
       ]
-    }
+    },
     {
       eventKey: 17,
       name: "",
@@ -668,7 +684,7 @@ export const arrayMethodsData2 = {
 };
 
 // blank template:
-// 
+//
 // {
 //   eventKey: 99,
 //   name: "",

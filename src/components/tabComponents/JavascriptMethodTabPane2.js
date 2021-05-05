@@ -20,8 +20,9 @@ export default function JavascriptMethodTabPane(props) {
 
     const subsections = section.subsections.map(subsection => {
       return (
-        <div>
-          <pre style={{ padding: "1%", backgroundColor: "#eee" }}>
+        <div style={{ marginBottom: "1%" }}>
+          {subsection.title}
+          <pre style={{ padding: "1%", margin: 0, backgroundColor: "#eee" }}>
             {subsection.code}
           </pre>
           {subsection.description}
