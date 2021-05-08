@@ -1,73 +1,14 @@
 import React, { useState } from "react";
 import { Row, Col, ListGroup, TabContainer, TabContent } from "react-bootstrap";
-// import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
-import JavascriptMethodTabPane2 from "./JavascriptMethodTabPane2.js";
+import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import TabNavLinks from "./TabNavLinks.js";
-// import { arrayMethodsData } from "./data/ArrayMethodsData.js";
-import { arrayMethodsData2 } from "./data/ArrayMethodsData2.js";
-import { numberMethodsData2 } from "./data/NumberMethodsData2.js";
+import { arrayMethodsData } from "./data/ArrayMethodsData.js";
+import { numberMethodsData } from "./data/NumberMethodsData.js";
 
 export default function TabsContainer() {
   const navLinksArray = { array: [], number: [], string: [] };
 
-  // const createTabPanes = arrayMethodsData[1].methods.map(card => {
-  //   navLinksArray.push(
-  //     <NavItem>
-  //       <NavLink eventKey={`${arrayMethodsData[1].eventKey}-${card.eventKey}`}>
-  //         {card.name}
-  //       </NavLink>
-  //     </NavItem>
-  //   );
-  //   return (
-  //     <JavascriptMethodTabPane
-  //       eventKey={`${arrayMethodsData[1].eventKey}-${card.eventKey}`}
-  //       name={card.name}
-  //       description={card.description}
-  //       sections={card.sections}
-  //     />
-  //   );
-  // });
-  // const createTabPanes = arrayMethodsData[1].methods.map(card => {
-  //   navLinksArray.push(
-  //     <NavItem>
-  //       <NavLink eventKey={`array-${card.eventKey}`}>{card.name}</NavLink>
-  //     </NavItem>
-  //   );
-  //   return (
-  //     <JavascriptMethodTabPane
-  //       eventKey={`number-${card.eventKey}`}
-  //       name={card.name}
-  //       description={card.description}
-  //       sections={card.sections}
-  //     />
-  //   );
-  // });
-
-  //-------
-  // const createGenericTabPanes = object => {
-  //   return object.methods.map((method, index) => {
-  //     if (index !== 0) {
-  //       navLinksArray[object.eventKey].push(
-  //         <ListGroup.Item
-  //           action
-  //           eventKey={`${object.eventKey}-${method.eventKey}`}
-  //         >
-  //           {method.name}
-  //         </ListGroup.Item>
-  //       );
-  //     }
-  //     return (
-  //       <JavascriptMethodTabPane
-  //         eventKey={`${object.eventKey}-${method.eventKey}`}
-  //         name={method.name}
-  //         description={method.description}
-  //         sections={method.sections}
-  //       />
-  //     );
-  //   });
-  // };
-  //---------
-  const createGenericTabPanes2 = object => {
+  const createGenericTabPanes = object => {
     return object.tabs.map((tab, index) => {
       if (index !== 0) {
         navLinksArray[object.eventKey].push(
@@ -80,7 +21,7 @@ export default function TabsContainer() {
         );
       }
       return (
-        <JavascriptMethodTabPane2
+        <JavascriptMethodTabPane
           eventKey={`${object.eventKey}-${tab.eventKey}`}
           name={tab.name}
           description={tab.description}
@@ -100,8 +41,8 @@ export default function TabsContainer() {
           </ListGroup>
         </Col>
         <Col sm={10}>
-          <TabContent>{createGenericTabPanes2(numberMethodsData2)}</TabContent>
-          <TabContent>{createGenericTabPanes2(arrayMethodsData2)}</TabContent>
+          <TabContent>{createGenericTabPanes(numberMethodsData)}</TabContent>
+          <TabContent>{createGenericTabPanes(arrayMethodsData)}</TabContent>
         </Col>
       </Row>
     </TabContainer>

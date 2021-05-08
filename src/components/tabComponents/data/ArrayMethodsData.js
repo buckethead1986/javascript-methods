@@ -1,4 +1,4 @@
-export const arrayMethodsData2 = {
+export const arrayMethodsData = {
   eventKey: "array",
   name: "Array",
   tabs: [
@@ -568,13 +568,12 @@ export const arrayMethodsData2 = {
     },
     {
       eventKey: 15,
-      name: "",
+      name: ".splice()",
       description: (
         <p>
-          Description
-          <ul>
-            <li>fillerBullet</li>
-          </ul>
+          slpice() modifies an array by adding or deleting elements from a
+          specified position.
+          <ul />
         </p>
       ),
       sections: [
@@ -585,8 +584,27 @@ export const arrayMethodsData2 = {
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description: (
+                <p>
+                  Required Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    {" "}
+                    {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+                    <li>
+                      startPosition: The index in the array to insert or remove
+                      elements. '1' would insert elements between index 0 and 1,
+                      or remove elements starting with element 1.
+                    </li>
+                    <li>
+                      numberOfElementsToRemove: How many elements should be
+                      removed, beginning with the element in startPosition.
+                    </li>
+                  </ul>
+                  The remaining elements are optional (element1, element2,...),
+                  and are any elements to be added into the array.
+                </p>
+              ),
+              code: `array.splice(startPosition, numberOfElementsToRemove, element1, element2,...)`
             }
           ]
         },
@@ -597,8 +615,9 @@ export const arrayMethodsData2 = {
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description:
+                "Starting at index 2 (Giraffes), removes 1 element, and inserts 1 element (Bears).",
+              code: `const animals = ["Lions", "Tigers", "Giraffes", "Oh", "My"]\nanimals.splice(2, 1, "Bears")\nconsole.log(animals) // ["Lions", "Tigers", "Bears", "Oh", "My"]`
             }
           ]
         }

@@ -30,7 +30,7 @@
 //   ]
 // };
 
-export const numberMethodsData2 = {
+export const numberMethodsData = {
   eventKey: "number",
   name: "Number",
   tabs: [
