@@ -585,7 +585,7 @@ export const arrayMethodsData = {
               id: 0,
               title: "",
               description: (
-                <p>
+                <div style={{ marginBottom: "1%" }}>
                   Required Values:
                   <ul style={{ marginBottom: 0 }}>
                     {" "}
@@ -602,7 +602,7 @@ export const arrayMethodsData = {
                   </ul>
                   The remaining elements are optional (element1, element2,...),
                   and are any elements to be added into the array.
-                </p>
+                </div>
               ),
               code: `array.splice(startPosition, numberOfElementsToRemove, element1, element2,...)`
             }

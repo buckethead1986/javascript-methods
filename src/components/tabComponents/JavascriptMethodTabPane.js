@@ -20,13 +20,20 @@ export default function JavascriptMethodTabPane(props) {
 
     const subsections = section.subsections.map(subsection => {
       return (
-        <div style={{ marginBottom: "1%" }}>
+        <p
+          style={{
+            padding: "1%",
+            backgroundColor: "#ddd"
+          }}
+        >
           {subsection.title}
+
+          <div style={{ marginBottom: "1%" }}>{subsection.description}</div>
+
           <pre style={{ padding: "1%", margin: 0, backgroundColor: "#eee" }}>
             {subsection.code}
           </pre>
-          {subsection.description}
-        </div>
+        </p>
       );
     });
 
@@ -47,7 +54,6 @@ export default function JavascriptMethodTabPane(props) {
     <TabPane eventKey={props.eventKey}>
       <Card border="primary" style={{ width: "90%" }}>
         <Card.Header>{props.name}</Card.Header>
-
         <Card.Body>
           <Card.Title>Description</Card.Title>
           <Card.Text>{props.description}</Card.Text>
