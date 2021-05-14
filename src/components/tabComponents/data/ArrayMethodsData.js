@@ -64,42 +64,6 @@ export const arrayMethodsData = {
             }
           ]
         }
-        // {
-        //   id: 2,
-        //   title: "Syntax",
-        //   description: "",
-        //   code: `array.join(separator)`
-        // },
-        // {
-        //   id: 3,
-        //   title: "Example",
-        //   description: "",
-        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        // },
-        // {
-        //   id: 4,
-        //   title: "Syntax",
-        //   description: "",
-        //   code: `array.join(separator)`
-        // },
-        // {
-        //   id: 5,
-        //   title: "Example",
-        //   description: "",
-        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        // },
-        // {
-        //   id: 6,
-        //   title: "Syntax",
-        //   description: "",
-        //   code: `array.join(separator)`
-        // },
-        // {
-        //   id: 7,
-        //   title: "Example",
-        //   description: "",
-        //   code: `const fruits = ['Apples', 'Oranges', 'Bananas', 'Watermelon']\nconsole.log(fruits.join()) // 'Apples, Oranges, Bananas, Watermelon'\nconsole.log(fruits.join(' and ')) // 'Apples and Oranges and Bananas and Watermelon'`
-        // }
       ]
     },
     {
