@@ -4,9 +4,10 @@ import JavascriptMethodTabPane from "./JavascriptMethodTabPane.js";
 import TabNavLinks from "./TabNavLinks.js";
 import { arrayMethodsData } from "./data/ArrayMethodsData.js";
 import { numberMethodsData } from "./data/NumberMethodsData.js";
+import { javascriptMethodsData } from "./data/JavascriptMethodsData.js";
 
 export default function TabsContainer() {
-  const navLinksArray = { array: [], number: [], string: [] };
+  const navLinksArray = { array: [], number: [], javascript: [] };
 
   const createGenericTabPanes = object => {
     return object.tabs.map((tab, index) => {
@@ -38,11 +39,18 @@ export default function TabsContainer() {
           <ListGroup>
             <TabNavLinks name="Array" navLinks={navLinksArray.array} />
             <TabNavLinks name="Number" navLinks={navLinksArray.number} />
+            <TabNavLinks
+              name="Javascript"
+              navLinks={navLinksArray.javascript}
+            />
           </ListGroup>
         </Col>
         <Col sm={10}>
           <TabContent>{createGenericTabPanes(numberMethodsData)}</TabContent>
           <TabContent>{createGenericTabPanes(arrayMethodsData)}</TabContent>
+          <TabContent>
+            {createGenericTabPanes(javascriptMethodsData)}
+          </TabContent>
         </Col>
       </Row>
     </TabContainer>
