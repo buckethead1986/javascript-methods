@@ -121,6 +121,82 @@ export const numberMethodsData = {
               code: `const x = 5 // a Number\nconst y = 10 // a Number\nconst z = '20' // a String\n\nconsole.log(x + y + z) // '1520', a String, not '51020'.\n// Javascript evaluates left to right, so evaluates 'x + y', and then evaluates that result + z.\n\nconsole.log("x + y is equal to: " + x + y) // 'x + y is equal to: 510'\n// The string is concatenated with x, and then that string is concatenated with y.`
             }
           ]
+        },
+        {
+          eventKey: 99,
+          name: "",
+          description: (
+            <p>
+              Description
+              <ul>
+                <li>fillerBullet</li>
+              </ul>
+            </p>
+          ),
+          sections: [
+            {
+              id: 0,
+              sectionTitle: "Syntax",
+              subsections: [
+                {
+                  id: 0,
+                  title: "",
+                  description: "",
+                  code: ``
+                }
+              ]
+            },
+            {
+              id: 1,
+              sectionTitle: "Example",
+              subsections: [
+                {
+                  id: 0,
+                  title: "",
+                  description: "",
+                  code: ``
+                }
+              ]
+            }
+          ]
+        },
+        {
+          eventKey: 99,
+          name: "",
+          description: (
+            <p>
+              Description
+              <ul>
+                <li>fillerBullet</li>
+              </ul>
+            </p>
+          ),
+          sections: [
+            {
+              id: 0,
+              sectionTitle: "Syntax",
+              subsections: [
+                {
+                  id: 0,
+                  title: "",
+                  description: "",
+                  code: ``
+                }
+              ]
+            },
+            {
+              id: 1,
+              sectionTitle: "Example",
+              subsections: [
+                {
+                  id: 0,
+                  title: "",
+                  description: "",
+                  code: ``
+                }
+              ]
+            }
+          ]
         }
       ]
     }
