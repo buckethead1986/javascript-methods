@@ -718,6 +718,118 @@ export const arrayMethodsData = {
           ]
         }
       ]
+    },
+    {
+      eventKey: 19,
+      name: ".slice()",
+      description: (
+        <p>
+          slice() creates a new array by slicing a part out of an existing
+          array.
+          <ul />
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: (
+                <div style={{ marginBottom: "1%" }}>
+                  Required Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    {" "}
+                    {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+                    <li>
+                      startPosition: The index in the array to start the removal
+                      of elements.
+                    </li>
+                  </ul>
+                  Optional Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    <li>
+                      endPosition: The index in the array to end the removal.
+                      Without this value, slice stops at the end of the array.
+                    </li>
+                  </ul>
+                </div>
+              ),
+              code: `array.slice(startPosition, endPosition)`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "Removes elements from index 2 to 4",
+              code: `const animals = ["Lions", "Tigers", "Bears", "Oh", "My"]\n\nconst fullSlice = animals.slice(2)\nconst partialSlice = animals.slice(1, 3)\n\nconsole.log(animals) // ["Lions", "Tigers", "Bears", "Oh", "My"]\nconsole.log(fullSlice) // ["Bears", "Oh", "My"]\nconsole.log(partialSlice) // ["Tigers", "Bears"]`
+            }
+          ]
+        }
+      ]
+    },
+    {
+      eventKey: 20,
+      name: ".slice()",
+      description: (
+        <p>
+          slice() creates a new array by slicing a part out of an existing
+          array.
+          <ul />
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: (
+                <div style={{ marginBottom: "1%" }}>
+                  Required Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    {" "}
+                    {/*Ugly and repetitive. Rewrite javascriptMethodTabPane to create these lists itself*/}
+                    <li>
+                      startPosition: The index in the array to start the removal
+                      of elements.
+                    </li>
+                  </ul>
+                  Optional Values:
+                  <ul style={{ marginBottom: 0 }}>
+                    <li>
+                      endPosition: The index in the array to end the removal.
+                      Without this value, slice stops at the end of the array.
+                    </li>
+                  </ul>
+                </div>
+              ),
+              code: `array.slice(startPosition, endPosition)`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "Removes elements from index 2 to 4",
+              code: `const animals = ["Lions", "Tigers", "Bears", "Oh", "My"]\n\nconst fullSlice = animals.slice(2)\nconst partialSlice = animals.slice(1, 3)\n\nconsole.log(animals) // ["Lions", "Tigers", "Bears", "Oh", "My"]\nconsole.log(fullSlice) // ["Bears", "Oh", "My"]\nconsole.log(partialSlice) // ["Tigers", "Bears"]`
+            }
+          ]
+        }
+      ]
     }
   ]
 };
