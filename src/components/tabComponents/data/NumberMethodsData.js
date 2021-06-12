@@ -123,154 +123,26 @@ export const numberMethodsData = {
           ]
         },
         {
-          eventKey: 99,
-          name: "",
-          description: (
-            <p>
-              Description
-              <ul>
-                <li>fillerBullet</li>
-              </ul>
-            </p>
-          ),
-          sections: [
+          id: 2,
+          sectionTitle: "Syntax",
+          subsections: [
             {
               id: 0,
-              sectionTitle: "Syntax",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            },
-            {
-              id: 1,
-              sectionTitle: "Example",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
+              title: "",
+              description: "",
+              code: ``
             }
           ]
         },
         {
-          eventKey: 99,
-          name: "",
-          description: (
-            <p>
-              Description
-              <ul>
-                <li>fillerBullet</li>
-              </ul>
-            </p>
-          ),
-          sections: [
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
             {
               id: 0,
-              sectionTitle: "Syntax",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            },
-            {
-              id: 1,
-              sectionTitle: "Example",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            }
-          ]
-        },
-        {
-          eventKey: 99,
-          name: "",
-          description: (
-            <p>
-              Description
-              <ul>
-                <li>fillerBullet</li>
-              </ul>
-            </p>
-          ),
-          sections: [
-            {
-              id: 0,
-              sectionTitle: "Syntax",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            },
-            {
-              id: 1,
-              sectionTitle: "Example",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            }
-          ]
-        },
-        {
-          eventKey: 99,
-          name: "",
-          description: (
-            <p>
-              Description
-              <ul>
-                <li>fillerBullet</li>
-              </ul>
-            </p>
-          ),
-          sections: [
-            {
-              id: 0,
-              sectionTitle: "Syntax",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
-            },
-            {
-              id: 1,
-              sectionTitle: "Example",
-              subsections: [
-                {
-                  id: 0,
-                  title: "",
-                  description: "",
-                  code: ``
-                }
-              ]
+              title: "",
+              description: "",
+              code: ``
             }
           ]
         }
@@ -292,30 +164,30 @@ export const numberMethodsData = {
 //       </ul>
 //     </p>
 //   ),
-//   sections: [
-//     {
-//       id: 0,
-//       sectionTitle: "Syntax",
-//       subsections: [
-//         {
-//           id: 0,
-//           title: "",
-//           description: "",
-//           code: ``
-//         }
-//       ]
-//     },
-//     {
-//       id: 1,
-//       sectionTitle: "Example",
-//       subsections: [
-//         {
-//           id: 0,
-//           title: "",
-//           description: "",
-//           code: ``
-//         }
-//       ]
-//     }
-//   ]
+// sections: [
+//   {
+//     id: 0,
+//     sectionTitle: "Syntax",
+//     subsections: [
+//       {
+//         id: 0,
+//         title: "",
+//         description: "",
+//         code: ``
+//       }
+//     ]
+//   },
+//   {
+//     id: 1,
+//     sectionTitle: "Example",
+//     subsections: [
+//       {
+//         id: 0,
+//         title: "",
+//         description: "",
+//         code: ``
+//       }
+//     ]
+//   }
+// ]
 // }

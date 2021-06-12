@@ -17,6 +17,7 @@ export default function JavascriptMethodTabPane(props) {
         </a>
       </li>
     );
+    console.log(section.sectionTitle, section, section.subsections);
 
     const subsections = section.subsections.map(subsection => {
       return (
