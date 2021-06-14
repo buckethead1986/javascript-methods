@@ -124,19 +124,34 @@ export const numberMethodsData = {
         },
         {
           id: 2,
-          sectionTitle: "Syntax",
+          sectionTitle: "NaN (Not a Number)",
           subsections: [
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description:
+                "NaN is a reserved word in Javascript indicating that a number is not a legal number.",
+              code: `const divideByBanana = 10 / "Banana" // divideByBanana will be NaN`
+            },
+            {
+              id: 1,
+              title: "",
+              description:
+                "If the string contains a number, the result will be a number",
+              code: `const divideByTen = 1000 / "10" // divideByTen will be 100.`
+            },
+            {
+              id: 2,
+              title: "",
+              description:
+                "The function isNan() returns true if the value is a number, and false if it isn't.",
+              code: `const x = 10\nconst y = "Bunny"\n\nisNaN(x) // false \nisNaN(y) // true`
             }
           ]
         },
         {
-          id: 1,
-          sectionTitle: "Example",
+          id: 3,
+          sectionTitle: "",
           subsections: [
             {
               id: 0,
