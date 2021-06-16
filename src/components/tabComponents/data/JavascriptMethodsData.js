@@ -124,7 +124,7 @@ export const javascriptMethodsData = {
         <p>
           Description
           <ul>
-            <li>fillerBullet</li>
+            <li />
           </ul>
         </p>
       ),
@@ -162,7 +162,7 @@ export const javascriptMethodsData = {
         <p>
           Description
           <ul>
-            <li>fillerBullet</li>
+            <li />
           </ul>
         </p>
       ),
@@ -200,7 +200,7 @@ export const javascriptMethodsData = {
         <p>
           Description
           <ul>
-            <li>fillerBullet</li>
+            <li />
           </ul>
         </p>
       ),
@@ -238,7 +238,7 @@ export const javascriptMethodsData = {
         <p>
           Description
           <ul>
-            <li>fillerBullet</li>
+            <li />
           </ul>
         </p>
       ),
