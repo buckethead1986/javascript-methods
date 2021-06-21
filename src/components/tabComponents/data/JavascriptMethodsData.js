@@ -43,10 +43,10 @@ export const javascriptMethodsData = {
     },
     {
       eventKey: 1,
-      name: "",
+      name: "For Loop",
       description: (
         <p>
-          Description
+          Loops execute a code block a number of times.
           <ul>
             <li>fillerBullet</li>
           </ul>
@@ -61,7 +61,7 @@ export const javascriptMethodsData = {
               id: 0,
               title: "",
               description: "",
-              code: ``
+              code: `for(let i = startCriteria; i < endCriteria; i++) {\n //code to be looped\n}`
             }
           ]
         },
@@ -72,8 +72,9 @@ export const javascriptMethodsData = {
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description:
+                "Each time this code runs, it will log the current value of 'i' to the console. 'i' will increase by 1 each round, until the ending criteria (i < 5) is not true.",
+              code: `for(let i = 0; i < 5; i ++) {\n console.log(i)\n}\n\n// This will output:\n0\n1\n2\n3\n4`
             }
           ]
         }
