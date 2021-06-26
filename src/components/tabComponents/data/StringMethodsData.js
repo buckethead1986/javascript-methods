@@ -109,6 +109,44 @@ export const stringMethodsData = {
           ]
         }
       ]
+    },
+    {
+      eventKey: 2,
+      name: "String",
+      description: (
+        <p>
+          `A Javascript String is zero or more characters written inside
+          quotation marks. Single or Double quotes can be used, and quotes can
+          be part of the string, as long as the internal quote type doesn/'t
+          match the outer type.`
+        </p>
+      ),
+      sections: [
+        {
+          id: 0,
+          sectionTitle: "Syntax",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const stringName = "This is a String"`
+            }
+          ]
+        },
+        {
+          id: 1,
+          sectionTitle: "Example",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: `const firstName = "John"\nconst lastName = 'Doe'\nconst nickname = "John 'The Yellow Dart' Doe"`
+            }
+          ]
+        }
+      ]
     }
   ]
 };

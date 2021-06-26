@@ -187,6 +187,18 @@ export const numberMethodsData = {
               code: ``
             }
           ]
+        },
+        {
+          id: 5,
+          sectionTitle: "",
+          subsections: [
+            {
+              id: 0,
+              title: "",
+              description: "",
+              code: ``
+            }
+          ]
         }
       ]
     }
