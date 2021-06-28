@@ -245,3 +245,44 @@ export const numberMethodsData = {
 //   }
 // ]
 // }
+
+// blank template:
+//
+// {
+//   eventKey: 99,
+//   name: "",
+//   description: (
+//     <p>
+//       Description
+//       <ul>
+//         <li>fillerBullet</li>
+//       </ul>
+//     </p>
+//   ),
+// sections: [
+//   {
+//     id: 0,
+//     sectionTitle: "Syntax",
+//     subsections: [
+//       {
+//         id: 0,
+//         title: "",
+//         description: "",
+//         code: ``
+//       }
+//     ]
+//   },
+//   {
+//     id: 1,
+//     sectionTitle: "Example",
+//     subsections: [
+//       {
+//         id: 0,
+//         title: "",
+//         description: "",
+//         code: ``
+//       }
+//     ]
+//   }
+// ]
+// }
