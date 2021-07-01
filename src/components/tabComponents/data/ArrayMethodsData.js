@@ -645,15 +645,9 @@ export const arrayMethodsData = {
     },
     {
       eventKey: 17,
-      name: "",
-      description: (
-        <p>
-          Description
-          <ul>
-            <li>fillerBullet</li>
-          </ul>
-        </p>
-      ),
+      name: ".forEach()",
+      description:
+        "Calls a function once for each element in an array, in order.",
       sections: [
         {
           id: 0,
@@ -662,8 +656,24 @@ export const arrayMethodsData = {
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description: (
+                <p>
+                  Required Values:
+                  <ul>
+                    <li>currentValue: The current element in the array.</li>
+                  </ul>
+                  Optional Values:
+                  <ul>
+                    <li>index: The array index of currentValue.</li>
+                    <li>arr: The array object.</li>
+                    <li>
+                      thisValue: Can be passed to provide a 'this' value for the
+                      function.
+                    </li>
+                  </ul>
+                </p>
+              ),
+              code: `array.forEach(function(currentValue, index, arr), thisValue)`
             }
           ]
         },
@@ -675,7 +685,7 @@ export const arrayMethodsData = {
               id: 0,
               title: "",
               description: "",
-              code: ``
+              code: `const numbers = [1, 2, 3, 4]\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers.forEach(multiplyByThree)) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
             }
           ]
         }
@@ -683,15 +693,9 @@ export const arrayMethodsData = {
     },
     {
       eventKey: 18,
-      name: "",
-      description: (
-        <p>
-          Description
-          <ul>
-            <li>fillerBullet</li>
-          </ul>
-        </p>
-      ),
+      name: ".forEach()",
+      description:
+        "Calls a function once for each element in an array, in order.",
       sections: [
         {
           id: 0,
@@ -700,8 +704,24 @@ export const arrayMethodsData = {
             {
               id: 0,
               title: "",
-              description: "",
-              code: ``
+              description: (
+                <p>
+                  Required Values:
+                  <ul>
+                    <li>currentValue: The current element in the array.</li>
+                  </ul>
+                  Optional Values:
+                  <ul>
+                    <li>index: The array index of currentValue.</li>
+                    <li>arr: The array object.</li>
+                    <li>
+                      thisValue: Can be passed to provide a 'this' value for the
+                      function.
+                    </li>
+                  </ul>
+                </p>
+              ),
+              code: `array.forEach(function(currentValue, index, arr), thisValue)`
             }
           ]
         },
@@ -713,7 +733,7 @@ export const arrayMethodsData = {
               id: 0,
               title: "",
               description: "",
-              code: ``
+              code: `const numbers = [1, 2, 3, 4]\n\nfunction multiplyByThree(currentValue, index, arr) {\n arr[index] = currentValue * 3\n}\n\nconsole.log(numbers.forEach(multiplyByThree)) // [3, 6, 9, 12]\n\n// Same functionality using an arrow function:\nnumbers.forEach((element, index, arr) => arr[index] = element * 3)  // [3, 6, 9, 12]`
             }
           ]
         }
